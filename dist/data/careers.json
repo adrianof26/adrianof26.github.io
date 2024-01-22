@@ -1,0 +1,34 @@
+{
+  "careers": [
+    {
+      "id": 1,
+      "position": "General Manager",
+      "location": "Jakarta, Indonesia"
+    },
+    {
+      "id": 2,
+      "position": "UI/UX Designer",
+      "location": "Yokohama, Japan"
+    },
+    {
+      "id": 3,
+      "position": "Blog Content Copywriter",
+      "location": "New York, United States"
+    },
+    {
+      "id": 4,
+      "position": "Graphic Designer",
+      "location": "New York, United States"
+    },
+    {
+      "id": 5,
+      "position": "Fleet Supervisor",
+      "location": "Jakarta, Indonesia"
+    },
+    {
+      "id": 6,
+      "position": "UX Analyst",
+      "location": "London, United Kingdom"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "values": [
+    {
+      "id": 1,
+      "image": "/src/assets/images/our-tech.jpg",
+      "number": "01",
+      "value": "Our tech",
+      "details": "We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!"
+    },
+    {
+      "id": 2,
+      "image": "/src/assets/images/our-integrity.jpg",
+      "number": "02",
+      "value": "Our integrity",
+      "details": "We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve."
+    },
+    {
+      "id": 3,
+      "image": "/src/assets/images/our-community.jpg",
+      "number": "03",
+      "value": "Our community",
+      "details": "We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees."
+    }
+  ]
+}
