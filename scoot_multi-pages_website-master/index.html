@@ -1,0 +1,247 @@
+<!--index/home-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Scoot Home</title>
+  </head>
+  <body>
+    <div class="body_wrap">
+      <!--navbar/sidebar-->
+    <nav>
+      <div class="navbar-item logo"><a href="index.html"><img src="assets/logo.svg"></a> </img></div>
+      <ul class="navbar-item tabs">
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="location.html">Location</a>
+        </li>
+        <li>
+          <a href="career.html">Careers</a>
+        </li>
+      </ul>
+      <a href="#scoot"><button class="navbar-item scootin">Get Scootin</button></a>
+    </nav>
+    <div class="sidebar-container">
+      <div class="logo"><a href="index.html"><img src="assets/logo.svg"></a></div>
+      <img id="hamburger" src="assets/icons/hamburger.svg" alt="" onclick="openNav()">
+    </div>
+    <div id="mySidebar" class="sidebar">
+      <div class="close"><img src="assets/icons/close.svg" onclick="closeNav()"></img></div>
+      <div class="tabs">
+        <p><a href="about.html">About</a></p>
+        <p><a href="location.html">Location</a></p>
+        <p><a href="career.html">Careers</a></p>
+      </div>
+      <a href="#scoot"><button class=" scootin">Get Scootin</button></a>
+    </div>
+    <!--header-->
+      <div class="home_container">
+        <div class="home-image">
+          <div class="home-copy">
+          <div id="home-heading"><h1 id="home-head">Scooter sharing made simple</h1></div>
+
+          <div class="line">
+            <img id="home-line" src="assets/patterns/line.svg" alt="horizontal-line">
+          </div>
+          <div id="home-text">
+            Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
+
+          </div>
+          <div class="scoot-button">
+            <button class="scootin"><a href="#scoot" >Get Scootin</a></button>
+          </div>
+          </div>
+          <div class="arrow">
+            <img id="home-arrow" src="assets/patterns/right-arrow.svg" alt="right-arrow">
+          </div>
+          <div class="circles">
+            <img class="home-circle" src="assets/patterns/white-circles.svg" alt="right-arrow">
+          </div>
+
+        </div>
+      </div>
+      <!--steps-->
+      <section class="steps">
+        <div class="step-container">
+
+
+          <div class="horizontal-line">
+            <img src="assets/patterns/horizontal-line.svg" alt="horizontal line">
+          </div>
+          <div class="vertical-line">
+            <img src="assets/patterns/vertical-line.svg" alt="vertical line">
+          </div>
+          <div class="steps steps_wrap">
+            <div class="step-card">
+            <div class="step-icons ">
+              <img  src="assets/icons/locate.svg" alt="locate">
+            </div>
+            <div class="step_copy">
+              <h4>Locate with app</h4>
+              <p>
+                Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+              </p>
+            </div>
+            </div>
+            <div class="step-card">
+
+            <div class="step-icons ">
+              <img class="not-first" src="assets/icons/scooter.svg" alt="locate">
+            </div>
+            <div class="step_copy scooter">
+              <h4>Pick your scooter</h4>
+              <p>
+              We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.
+                </p>
+            </div>
+            </div>
+            <div class="step-card">
+              <div class="step-icons">
+              <img class="not-first" src="assets/icons/ride.svg" alt="locate">
+            </div>
+            <div class="step_copy ride">
+              <h4>Enjoy the ride</h4>
+              <p>
+              Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.
+            </p>
+            </div>
+          </div>
+          </div>
+          </div>
+      </section>
+      <!--articles section-->
+      <section class="articles">
+        <div class="article_container">
+          <article class="feature">
+            <div class="article_picture picture1">
+              <img class="feature_pic" src="assets/images/telemetry.jpg" alt="article feature">
+            </div>
+            <div class="article_copy article1">
+              <h2>Easy to use riding telemetry</h2>
+              <p class="article_text">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+              <div class="learn-button learn1">
+                <a href="about.html"><button class="learn-more">Learn More</button></a>
+              </div>
+            </div>
+
+          </article>
+          <article class="feature">
+            <div class="article_picture picture2">
+              <img class="feature_pic" src="assets/images/near-you.jpg" alt="article feature">
+            </div>
+            <div class="article_copy article2">
+              <h2>Coming to a city near you</h2>
+              <p class="article_text">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+              <div class="learn-button learn2">
+                <a href="location.html"><button class="learn-more">Learn More</button></a>
+              </div>
+            </div>
+
+          </article>
+          <article class="feature">
+            <div class="article_picture picture1">
+              <img class="feature_pic" src="assets/images/payments.jpg" alt="article feature">
+            </div>
+            <div class="article_copy article1">
+              <h2>Zero hassle payments</h2>
+              <p class="article_text">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+              <div class="learn-button learn1">
+                <a href="about.html"><button class="learn-more">Learn More</button></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="patterns">
+        <div class="pattern pattern--circle pattern--circle--group-1">
+          <img src="./assets/patterns/circle.svg" alt="circle pattern">
+        </div>
+        <div class="pattern pattern--arrow pattern--arrow--group-1">
+          <img src="./assets/patterns/left-downward-arrow.svg" alt="left downward arrow pattern">
+        </div>
+        <div class="pattern pattern--circle pattern--circle--group-2">
+          <img src="./assets/patterns/circle.svg" alt="circle pattern">
+        </div>
+        <div class="pattern pattern--arrow pattern--arrow--group-2">
+          <img src="./assets/patterns/right-arrow.svg" alt="right arrow pattern">
+        </div>
+        <div class="pattern pattern--circle pattern--circle--group-3">
+          <img src="./assets/patterns/circle.svg" alt="circle pattern">
+        </div>
+        <div class="pattern pattern--arrow pattern--arrow--group-3">
+          <img src="./assets/patterns/left-downward-arrow.svg" alt="left downward arrow pattern">
+        </div>
+        </div>
+      </section>
+    <!--Sign Up Today-->
+    <section class="call-to-action" id="scoot">
+      <div class="call-to-action-container">
+        <h2>Sign up and Scoot off today</h2>
+        <div class="stores">
+          <div class="store appstore"><img src="assets/icons/app-store.svg" alt="appstore"></div>
+          <div class="store playstore"><img src="assets/icons/google-play.svg" alt="playstore"></div>
+        </div>
+      </div>
+      <!--div class="call-to-action-pattern"><img src="assets/patterns/cta-circles.svg" alt="circle patterns"></div-->
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo"><a href="index.html"><img src="./assets/logo-white.svg"></a> </img></div>
+        <ul class="footer-tabs">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="location.html">Location</a>
+          </li>
+          <li>
+            <a href="career.html">Careers</a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li>
+            <a href="www.facebook.com"><img src="assets/icons/facebook.svg" alt="facebook-icon"></a>
+          </li>
+          <li>
+            <a href="www.twitter.com"><img src="assets/icons/twitter.svg" alt="twitter"></a>
+          </li>
+          <li>
+            <a href="www.instagram.com"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+          </li>
+        </ul>
+        </ul>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://twitter.com/namratapdr" target="_blank">Namrata Podder</a>.
+        </div>
+      </div>
+    </footer>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "270px";
+
+      }
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+
+      }
+
+    </script>
+  </body>
+</html>
