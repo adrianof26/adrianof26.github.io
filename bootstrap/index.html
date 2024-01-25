@@ -1,1374 +1,191 @@
-<!-- saved from url=(0115)file:///Users/adrianof26/Downloads/SB%20UI%20Kit%20Pro%20Angular%20-%20Theme%20Preview%20-%20Start%20Bootstrap.html -->
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="origin-trial"
-    content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
-  <meta http-equiv="origin-trial"
-    content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
-
-  <title>SB UI Kit Pro Angular - Theme Preview - Start Bootstrap</title>
-  <!--<base href="/">--><!--<base href=".">-->
-  <base href=".">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="msapplication-TileColor" content="#dd3d31">
-  <meta name="theme-color" content="#dd3d31">
-  <style type="text/css">
-    :root,
-    :host {
-      --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
-      --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
-      --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
-      --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
-      --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
-      --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
-      --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
-      --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
-      --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
-    }
-
-    svg:not(:root).svg-inline--fa,
-    svg:not(:host).svg-inline--fa {
-      overflow: visible;
-      box-sizing: content-box;
-    }
-
-    .svg-inline--fa {
-      display: var(--fa-display, inline-block);
-      height: 1em;
-      overflow: visible;
-      vertical-align: -0.125em;
-    }
-
-    .svg-inline--fa.fa-2xs {
-      vertical-align: 0.1em;
-    }
-
-    .svg-inline--fa.fa-xs {
-      vertical-align: 0em;
-    }
-
-    .svg-inline--fa.fa-sm {
-      vertical-align: -0.0714285705em;
-    }
-
-    .svg-inline--fa.fa-lg {
-      vertical-align: -0.2em;
-    }
-
-    .svg-inline--fa.fa-xl {
-      vertical-align: -0.25em;
-    }
-
-    .svg-inline--fa.fa-2xl {
-      vertical-align: -0.3125em;
-    }
-
-    .svg-inline--fa.fa-pull-left {
-      margin-right: var(--fa-pull-margin, 0.3em);
-      width: auto;
-    }
-
-    .svg-inline--fa.fa-pull-right {
-      margin-left: var(--fa-pull-margin, 0.3em);
-      width: auto;
-    }
-
-    .svg-inline--fa.fa-li {
-      width: var(--fa-li-width, 2em);
-      top: 0.25em;
-    }
-
-    .svg-inline--fa.fa-fw {
-      width: var(--fa-fw-width, 1.25em);
-    }
-
-    .fa-layers svg.svg-inline--fa {
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .fa-layers-counter,
-    .fa-layers-text {
-      display: inline-block;
-      position: absolute;
-      text-align: center;
-    }
-
-    .fa-layers {
-      display: inline-block;
-      height: 1em;
-      position: relative;
-      text-align: center;
-      vertical-align: -0.125em;
-      width: 1em;
-    }
-
-    .fa-layers svg.svg-inline--fa {
-      -webkit-transform-origin: center center;
-      transform-origin: center center;
-    }
-
-    .fa-layers-text {
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      -webkit-transform-origin: center center;
-      transform-origin: center center;
-    }
-
-    .fa-layers-counter {
-      background-color: var(--fa-counter-background-color, #ff253a);
-      border-radius: var(--fa-counter-border-radius, 1em);
-      box-sizing: border-box;
-      color: var(--fa-inverse, #fff);
-      line-height: var(--fa-counter-line-height, 1);
-      max-width: var(--fa-counter-max-width, 5em);
-      min-width: var(--fa-counter-min-width, 1.5em);
-      overflow: hidden;
-      padding: var(--fa-counter-padding, 0.25em 0.5em);
-      right: var(--fa-right, 0);
-      text-overflow: ellipsis;
-      top: var(--fa-top, 0);
-      -webkit-transform: scale(var(--fa-counter-scale, 0.25));
-      transform: scale(var(--fa-counter-scale, 0.25));
-      -webkit-transform-origin: top right;
-      transform-origin: top right;
-    }
-
-    .fa-layers-bottom-right {
-      bottom: var(--fa-bottom, 0);
-      right: var(--fa-right, 0);
-      top: auto;
-      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-      transform: scale(var(--fa-layers-scale, 0.25));
-      -webkit-transform-origin: bottom right;
-      transform-origin: bottom right;
-    }
-
-    .fa-layers-bottom-left {
-      bottom: var(--fa-bottom, 0);
-      left: var(--fa-left, 0);
-      right: auto;
-      top: auto;
-      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-      transform: scale(var(--fa-layers-scale, 0.25));
-      -webkit-transform-origin: bottom left;
-      transform-origin: bottom left;
-    }
-
-    .fa-layers-top-right {
-      top: var(--fa-top, 0);
-      right: var(--fa-right, 0);
-      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-      transform: scale(var(--fa-layers-scale, 0.25));
-      -webkit-transform-origin: top right;
-      transform-origin: top right;
-    }
-
-    .fa-layers-top-left {
-      left: var(--fa-left, 0);
-      right: auto;
-      top: var(--fa-top, 0);
-      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-      transform: scale(var(--fa-layers-scale, 0.25));
-      -webkit-transform-origin: top left;
-      transform-origin: top left;
-    }
-
-    .fa-1x {
-      font-size: 1em;
-    }
-
-    .fa-2x {
-      font-size: 2em;
-    }
-
-    .fa-3x {
-      font-size: 3em;
-    }
-
-    .fa-4x {
-      font-size: 4em;
-    }
-
-    .fa-5x {
-      font-size: 5em;
-    }
-
-    .fa-6x {
-      font-size: 6em;
-    }
-
-    .fa-7x {
-      font-size: 7em;
-    }
-
-    .fa-8x {
-      font-size: 8em;
-    }
-
-    .fa-9x {
-      font-size: 9em;
-    }
-
-    .fa-10x {
-      font-size: 10em;
-    }
-
-    .fa-2xs {
-      font-size: 0.625em;
-      line-height: 0.1em;
-      vertical-align: 0.225em;
-    }
-
-    .fa-xs {
-      font-size: 0.75em;
-      line-height: 0.0833333337em;
-      vertical-align: 0.125em;
-    }
-
-    .fa-sm {
-      font-size: 0.875em;
-      line-height: 0.0714285718em;
-      vertical-align: 0.0535714295em;
-    }
-
-    .fa-lg {
-      font-size: 1.25em;
-      line-height: 0.05em;
-      vertical-align: -0.075em;
-    }
-
-    .fa-xl {
-      font-size: 1.5em;
-      line-height: 0.0416666682em;
-      vertical-align: -0.125em;
-    }
-
-    .fa-2xl {
-      font-size: 2em;
-      line-height: 0.03125em;
-      vertical-align: -0.1875em;
-    }
-
-    .fa-fw {
-      text-align: center;
-      width: 1.25em;
-    }
-
-    .fa-ul {
-      list-style-type: none;
-      margin-left: var(--fa-li-margin, 2.5em);
-      padding-left: 0;
-    }
-
-    .fa-ul>li {
-      position: relative;
-    }
-
-    .fa-li {
-      left: calc(var(--fa-li-width, 2em) * -1);
-      position: absolute;
-      text-align: center;
-      width: var(--fa-li-width, 2em);
-      line-height: inherit;
-    }
-
-    .fa-border {
-      border-color: var(--fa-border-color, #eee);
-      border-radius: var(--fa-border-radius, 0.1em);
-      border-style: var(--fa-border-style, solid);
-      border-width: var(--fa-border-width, 0.08em);
-      padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
-    }
-
-    .fa-pull-left {
-      float: left;
-      margin-right: var(--fa-pull-margin, 0.3em);
-    }
-
-    .fa-pull-right {
-      float: right;
-      margin-left: var(--fa-pull-margin, 0.3em);
-    }
-
-    .fa-beat {
-      -webkit-animation-name: fa-beat;
-      animation-name: fa-beat;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
-      animation-timing-function: var(--fa-animation-timing, ease-in-out);
-    }
-
-    .fa-bounce {
-      -webkit-animation-name: fa-bounce;
-      animation-name: fa-bounce;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-    }
-
-    .fa-fade {
-      -webkit-animation-name: fa-fade;
-      animation-name: fa-fade;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-    }
-
-    .fa-beat-fade {
-      -webkit-animation-name: fa-beat-fade;
-      animation-name: fa-beat-fade;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-    }
-
-    .fa-flip {
-      -webkit-animation-name: fa-flip;
-      animation-name: fa-flip;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
-      animation-timing-function: var(--fa-animation-timing, ease-in-out);
-    }
-
-    .fa-shake {
-      -webkit-animation-name: fa-shake;
-      animation-name: fa-shake;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-      animation-timing-function: var(--fa-animation-timing, linear);
-    }
-
-    .fa-spin {
-      -webkit-animation-name: fa-spin;
-      animation-name: fa-spin;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 2s);
-      animation-duration: var(--fa-animation-duration, 2s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-      animation-timing-function: var(--fa-animation-timing, linear);
-    }
-
-    .fa-spin-reverse {
-      --fa-animation-direction: reverse;
-    }
-
-    .fa-pulse,
-    .fa-spin-pulse {
-      -webkit-animation-name: fa-spin;
-      animation-name: fa-spin;
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1s);
-      animation-duration: var(--fa-animation-duration, 1s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
-      animation-timing-function: var(--fa-animation-timing, steps(8));
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-
-      .fa-beat,
-      .fa-bounce,
-      .fa-fade,
-      .fa-beat-fade,
-      .fa-flip,
-      .fa-pulse,
-      .fa-shake,
-      .fa-spin,
-      .fa-spin-pulse {
-        -webkit-animation-delay: -1ms;
-        animation-delay: -1ms;
-        -webkit-animation-duration: 1ms;
-        animation-duration: 1ms;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-        -webkit-transition-delay: 0s;
-        transition-delay: 0s;
-        -webkit-transition-duration: 0s;
-        transition-duration: 0s;
-      }
-    }
-
-    @-webkit-keyframes fa-beat {
-
-      0%,
-      90% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-      45% {
-        -webkit-transform: scale(var(--fa-beat-scale, 1.25));
-        transform: scale(var(--fa-beat-scale, 1.25));
-      }
-    }
-
-    @keyframes fa-beat {
-
-      0%,
-      90% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-      45% {
-        -webkit-transform: scale(var(--fa-beat-scale, 1.25));
-        transform: scale(var(--fa-beat-scale, 1.25));
-      }
-    }
-
-    @-webkit-keyframes fa-bounce {
-      0% {
-        -webkit-transform: scale(1, 1) translateY(0);
-        transform: scale(1, 1) translateY(0);
-      }
-
-      10% {
-        -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-      }
-
-      30% {
-        -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-      }
-
-      50% {
-        -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-      }
-
-      57% {
-        -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-      }
-
-      64% {
-        -webkit-transform: scale(1, 1) translateY(0);
-        transform: scale(1, 1) translateY(0);
-      }
-
-      100% {
-        -webkit-transform: scale(1, 1) translateY(0);
-        transform: scale(1, 1) translateY(0);
-      }
-    }
-
-    @keyframes fa-bounce {
-      0% {
-        -webkit-transform: scale(1, 1) translateY(0);
-        transform: scale(1, 1) translateY(0);
-      }
-
-      10% {
-        -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-      }
-
-      30% {
-        -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-      }
-
-      50% {
-        -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-      }
-
-      57% {
-        -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-      }
-
-      64% {
-        -webkit-transform: scale(1, 1) translateY(0);
-        transform: scale(1, 1) translateY(0);
-      }
-
-      100% {
-        -webkit-transform: scale(1, 1) translateY(0);
-        transform: scale(1, 1) translateY(0);
-      }
-    }
-
-    @-webkit-keyframes fa-fade {
-      50% {
-        opacity: var(--fa-fade-opacity, 0.4);
-      }
-    }
-
-    @keyframes fa-fade {
-      50% {
-        opacity: var(--fa-fade-opacity, 0.4);
-      }
-    }
-
-    @-webkit-keyframes fa-beat-fade {
-
-      0%,
-      100% {
-        opacity: var(--fa-beat-fade-opacity, 0.4);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-      50% {
-        opacity: 1;
-        -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
-        transform: scale(var(--fa-beat-fade-scale, 1.125));
-      }
-    }
-
-    @keyframes fa-beat-fade {
-
-      0%,
-      100% {
-        opacity: var(--fa-beat-fade-opacity, 0.4);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-      50% {
-        opacity: 1;
-        -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
-        transform: scale(var(--fa-beat-fade-scale, 1.125));
-      }
-    }
-
-    @-webkit-keyframes fa-flip {
-      50% {
-        -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-      }
-    }
-
-    @keyframes fa-flip {
-      50% {
-        -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-      }
-    }
-
-    @-webkit-keyframes fa-shake {
-      0% {
-        -webkit-transform: rotate(-15deg);
-        transform: rotate(-15deg);
-      }
-
-      4% {
-        -webkit-transform: rotate(15deg);
-        transform: rotate(15deg);
-      }
-
-      8%,
-      24% {
-        -webkit-transform: rotate(-18deg);
-        transform: rotate(-18deg);
-      }
-
-      12%,
-      28% {
-        -webkit-transform: rotate(18deg);
-        transform: rotate(18deg);
-      }
-
-      16% {
-        -webkit-transform: rotate(-22deg);
-        transform: rotate(-22deg);
-      }
-
-      20% {
-        -webkit-transform: rotate(22deg);
-        transform: rotate(22deg);
-      }
-
-      32% {
-        -webkit-transform: rotate(-12deg);
-        transform: rotate(-12deg);
-      }
-
-      36% {
-        -webkit-transform: rotate(12deg);
-        transform: rotate(12deg);
-      }
-
-      40%,
-      100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-    }
-
-    @keyframes fa-shake {
-      0% {
-        -webkit-transform: rotate(-15deg);
-        transform: rotate(-15deg);
-      }
-
-      4% {
-        -webkit-transform: rotate(15deg);
-        transform: rotate(15deg);
-      }
-
-      8%,
-      24% {
-        -webkit-transform: rotate(-18deg);
-        transform: rotate(-18deg);
-      }
-
-      12%,
-      28% {
-        -webkit-transform: rotate(18deg);
-        transform: rotate(18deg);
-      }
-
-      16% {
-        -webkit-transform: rotate(-22deg);
-        transform: rotate(-22deg);
-      }
-
-      20% {
-        -webkit-transform: rotate(22deg);
-        transform: rotate(22deg);
-      }
-
-      32% {
-        -webkit-transform: rotate(-12deg);
-        transform: rotate(-12deg);
-      }
-
-      36% {
-        -webkit-transform: rotate(12deg);
-        transform: rotate(12deg);
-      }
-
-      40%,
-      100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-    }
-
-    @-webkit-keyframes fa-spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes fa-spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-
-    .fa-rotate-90 {
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-    }
-
-    .fa-rotate-180 {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-    }
-
-    .fa-rotate-270 {
-      -webkit-transform: rotate(270deg);
-      transform: rotate(270deg);
-    }
-
-    .fa-flip-horizontal {
-      -webkit-transform: scale(-1, 1);
-      transform: scale(-1, 1);
-    }
-
-    .fa-flip-vertical {
-      -webkit-transform: scale(1, -1);
-      transform: scale(1, -1);
-    }
-
-    .fa-flip-both,
-    .fa-flip-horizontal.fa-flip-vertical {
-      -webkit-transform: scale(-1, -1);
-      transform: scale(-1, -1);
-    }
-
-    .fa-rotate-by {
-      -webkit-transform: rotate(var(--fa-rotate-angle, none));
-      transform: rotate(var(--fa-rotate-angle, none));
-    }
-
-    .fa-stack {
-      display: inline-block;
-      vertical-align: middle;
-      height: 2em;
-      position: relative;
-      width: 2.5em;
-    }
-
-    .fa-stack-1x,
-    .fa-stack-2x {
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: var(--fa-stack-z-index, auto);
-    }
-
-    .svg-inline--fa.fa-stack-1x {
-      height: 1em;
-      width: 1.25em;
-    }
-
-    .svg-inline--fa.fa-stack-2x {
-      height: 2em;
-      width: 2.5em;
-    }
-
-    .fa-inverse {
-      color: var(--fa-inverse, #fff);
-    }
-
-    .sr-only,
-    .fa-sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border-width: 0;
-    }
-
-    .sr-only-focusable:not(:focus),
-    .fa-sr-only-focusable:not(:focus) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border-width: 0;
-    }
-
-    .svg-inline--fa .fa-primary {
-      fill: var(--fa-primary-color, currentColor);
-      opacity: var(--fa-primary-opacity, 1);
-    }
-
-    .svg-inline--fa .fa-secondary {
-      fill: var(--fa-secondary-color, currentColor);
-      opacity: var(--fa-secondary-opacity, 0.4);
-    }
-
-    .svg-inline--fa.fa-swap-opacity .fa-primary {
-      opacity: var(--fa-secondary-opacity, 0.4);
-    }
-
-    .svg-inline--fa.fa-swap-opacity .fa-secondary {
-      opacity: var(--fa-primary-opacity, 1);
-    }
-
-    .svg-inline--fa mask .fa-primary,
-    .svg-inline--fa mask .fa-secondary {
-      fill: black;
-    }
-
-    .fad.fa-inverse,
-    .fa-duotone.fa-inverse {
-      color: var(--fa-inverse, #fff);
-    }
-  </style>
-  <link rel="icon" type="image/png" href="https://startbootstrap.com/favicon.png">
-  <!-- Preload in script-->
-  <link rel="apple-touch-icon" sizes="180x180" href="https://assets.startbootstrap.com/img/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://assets.startbootstrap.com/img/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://assets.startbootstrap.com/img/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="https://assets.startbootstrap.com/img/icons/safari-pinned-tab.svg" color="#dd3d31">
-  <link rel="manifest" href="https://startbootstrap.com/manifest.webmanifest">
-
-  <noscript><img height="1" width="1" style="display: none"
-      src="https://www.facebook.com/tr?id=470997813790692&ev=PageView&noscript=1" /></noscript>
-  <style>
-    @charset "UTF-8";
-
-    :root {
-      --bs-gray: #69707a;
-      --bs-gray-dark: #363d47;
-      --bs-gray-100: #f2f6fc;
-      --bs-gray-200: #e0e5ec;
-      --bs-gray-300: #d4dae3;
-      --bs-gray-400: #c5ccd6;
-      --bs-gray-500: #a7aeb8;
-      --bs-gray-600: #69707a;
-      --bs-gray-700: #4a515b;
-      --bs-gray-800: #363d47;
-      --bs-gray-900: #212832;
-      --bs-primary: #dc392d;
-      --bs-secondary: #e0e5ec;
-      --bs-success: #00ac69;
-      --bs-info: #00cfd5;
-      --bs-warning: #f4a100;
-      --bs-danger: #e81500;
-      --bs-light: #f2f6fc;
-      --bs-dark: #212832;
-      --bs-black: #000;
-      --bs-white: #fff;
-      --bs-red: #dc392d;
-      --bs-orange: #f76400;
-      --bs-yellow: #f4a100;
-      --bs-green: #00ac69;
-      --bs-teal: #00ba94;
-      --bs-cyan: #00cfd5;
-      --bs-blue: #0061f2;
-      --bs-indigo: #5800e8;
-      --bs-purple: #6900c7;
-      --bs-pink: #e30059;
-      --bs-red-soft: #f0e3e7;
-      --bs-orange-soft: #f3e7e3;
-      --bs-yellow-soft: #f2eee3;
-      --bs-green-soft: #daefed;
-      --bs-teal-soft: #daf0f2;
-      --bs-cyan-soft: #daf2f8;
-      --bs-blue-soft: #dae7fb;
-      --bs-indigo-soft: #e3ddfa;
-      --bs-purple-soft: #e4ddf7;
-      --bs-pink-soft: #f1ddec;
-      --bs-primary-soft: #f0e3e7;
-      --bs-secondary-soft: #f0f4fa;
-      --bs-success-soft: #daefed;
-      --bs-info-soft: #daf2f8;
-      --bs-warning-soft: #f2eee3;
-      --bs-danger-soft: #f1e0e3;
-      --bs-primary-rgb: 220, 57, 45;
-      --bs-secondary-rgb: 224, 229, 236;
-      --bs-success-rgb: 0, 172, 105;
-      --bs-info-rgb: 0, 207, 213;
-      --bs-warning-rgb: 244, 161, 0;
-      --bs-danger-rgb: 232, 21, 0;
-      --bs-light-rgb: 242, 246, 252;
-      --bs-dark-rgb: 33, 40, 50;
-      --bs-red-rgb: 220, 57, 45;
-      --bs-orange-rgb: 247, 100, 0;
-      --bs-yellow-rgb: 244, 161, 0;
-      --bs-green-rgb: 0, 172, 105;
-      --bs-teal-rgb: 0, 186, 148;
-      --bs-cyan-rgb: 0, 207, 213;
-      --bs-blue-rgb: 0, 97, 242;
-      --bs-indigo-rgb: 88, 0, 232;
-      --bs-purple-rgb: 105, 0, 199;
-      --bs-pink-rgb: 227, 0, 89;
-      --bs-red-soft-rgb: 240, 227, 231;
-      --bs-orange-soft-rgb: 243, 231, 227;
-      --bs-yellow-soft-rgb: 242, 238, 227;
-      --bs-green-soft-rgb: 218, 239, 237;
-      --bs-teal-soft-rgb: 218, 240, 242;
-      --bs-cyan-soft-rgb: 218, 242, 248;
-      --bs-blue-soft-rgb: 218, 231, 251;
-      --bs-indigo-soft-rgb: 227, 221, 250;
-      --bs-purple-soft-rgb: 228, 221, 247;
-      --bs-pink-soft-rgb: 241, 221, 236;
-      --bs-primary-soft-rgb: 240, 227, 231;
-      --bs-secondary-soft-rgb: 240, 244, 250;
-      --bs-success-soft-rgb: 218, 239, 237;
-      --bs-info-soft-rgb: 218, 242, 248;
-      --bs-warning-soft-rgb: 242, 238, 227;
-      --bs-danger-soft-rgb: 241, 224, 227;
-      --bs-white-rgb: 255, 255, 255;
-      --bs-black-rgb: 0, 0, 0;
-      --bs-body-color-rgb: 105, 112, 122;
-      --bs-body-bg-rgb: 255, 255, 255;
-      --bs-font-sans-serif: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
-      --bs-body-font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-      --bs-body-font-size: 1rem;
-      --bs-body-font-weight: 400;
-      --bs-body-line-height: 1.5;
-      --bs-body-color: #69707a;
-      --bs-body-bg: #fff;
-      --bs-border-width: 1px;
-      --bs-border-style: solid;
-      --bs-border-color: #e0e5ec;
-      --bs-border-color-translucent: rgba(0, 0, 0, .175);
-      --bs-border-radius: .35rem;
-      --bs-border-radius-sm: .25rem;
-      --bs-border-radius-lg: .5rem;
-      --bs-border-radius-xl: 1rem;
-      --bs-border-radius-2xl: 2rem;
-      --bs-border-radius-pill: 50rem;
-      --bs-link-color: #dc392d;
-      --bs-link-hover-color: #b02e24;
-      --bs-code-color: #e30059;
-      --bs-highlight-bg: #fdeccc
-    }
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box
-    }
-
-    @media (prefers-reduced-motion: no-preference) {
-      :root {
-        scroll-behavior: smooth
-      }
-    }
-
-    body {
-      margin: 0;
-      font-family: var(--bs-body-font-family);
-      font-size: var(--bs-body-font-size);
-      font-weight: var(--bs-body-font-weight);
-      line-height: var(--bs-body-line-height);
-      color: var(--bs-body-color);
-      text-align: var(--bs-body-text-align);
-      background-color: var(--bs-body-bg);
-      -webkit-text-size-adjust: 100%;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-    }
-
-    html,
-    body {
-      height: 100%
-    }
-
-    body {
-      overflow-x: hidden
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-Thin.otf);
-      font-weight: 100;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-ThinItalic.otf);
-      font-weight: 100;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-ExtraLight.otf);
-      font-weight: 200;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-ExtraLightItalic.otf);
-      font-weight: 200;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-Light.otf);
-      font-weight: 300;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-LightItalic.otf);
-      font-weight: 300;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-Regular.otf);
-      font-weight: 400;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-RegularItalic.otf);
-      font-weight: 400;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-Medium.otf);
-      font-weight: 500;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-MediumItalic.otf);
-      font-weight: 500;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-SemiBold.otf);
-      font-weight: 600;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-SemiBoldItalic.otf);
-      font-weight: 600;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-Bold.otf);
-      font-weight: 700;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-BoldItalic.otf);
-      font-weight: 700;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-ExtraBold.otf);
-      font-weight: 800;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-ExtraBoldItalic.otf);
-      font-weight: 800;
-      font-style: italic
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-Black.otf);
-      font-weight: 800;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: Metropolis;
-      src: url(/assets/fonts/metropolis/Metropolis-BlackItalic.otf);
-      font-weight: 800;
-      font-style: italic
-    }
-
-    :root {
-      --litepicker-month-header-color: #4a515b;
-      --litepicker-button-prev-month-color: #69707a;
-      --litepicker-button-next-month-color: #69707a;
-      --litepicker-button-prev-month-color-hover: #212832;
-      --litepicker-button-next-month-color-hover: #212832;
-      --litepicker-month-weekday-color: #69707a;
-      --litepicker-month-week-number-color: #69707a;
-      --litepicker-day-width: 34px;
-      --litepicker-day-color: #363d47;
-      --litepicker-day-color-hover: #dc392d;
-      --litepicker-is-today-color: #69707a;
-      --litepicker-is-in-range-color: rgba(220, 57, 45, .15);
-      --litepicker-is-start-color: #fff;
-      --litepicker-is-start-color-bg: #dc392d;
-      --litepicker-is-end-color: #fff;
-      --litepicker-is-end-color-bg: #dc392d;
-      --litepicker-button-apply-color-bg: #dc392d;
-      --litepicker-button-reset-color-hover: #dc392d;
-      --litepicker-highlighted-day-color: #363d47;
-      --litepicker-highlighted-day-color-bg: rgba(220, 57, 45, .15)
-    }
-  </style>
-  <link rel="stylesheet"
-    href="./SB UI Kit Pro Angular - Theme Preview - Start Bootstrap_files/styles.19e555e2fc527962.css"
-    crossorigin="anonymous" media="all" onload="this.media=&#39;all&#39;"><noscript>
-    <link rel="stylesheet" href="styles.19e555e2fc527962.css">
-  </noscript>
-  <link rel="preload" as="script"
-    href="https://startbootstrap.com/src_modules_site_site-routing_module_ts.a66f888fa0637596.js" crossorigin="script">
-  <link rel="preload" as="font" href="https://startbootstrap.com/assets/fonts/metropolis/Metropolis-SemiBold.otf"
-    crossorigin="font">
-  <link rel="preload" as="font" href="https://startbootstrap.com/assets/fonts/metropolis/Metropolis-Medium.otf"
-    crossorigin="font">
-  <link rel="preload" as="font" href="https://startbootstrap.com/assets/fonts/metropolis/Metropolis-Regular.otf"
-    crossorigin="font">
-  <link rel="preload" as="font" href="https://startbootstrap.com/assets/fonts/metropolis/Metropolis-Bold.otf"
-    crossorigin="font">
-  <link rel="preload" as="font" href="https://startbootstrap.com/assets/fonts/metropolis/Metropolis-RegularItalic.otf"
-    crossorigin="font">
-  <link rel="canonical" href="https://startbootstrap.com/previews/sb-ui-kit-pro-angular">
-  <meta name="description"
-    content="An Angular 9 UI Kit built with Bootstrap. Demo the speed, functionality, components, and customization options available with this Bootstrap UI Kit!"
-    data-dynamic="true">
-  <meta name="og:description"
-    content="An Angular 9 UI Kit built with Bootstrap. Demo the speed, functionality, components, and customization options available with this Bootstrap UI Kit!"
-    data-dynamic="true">
-  <meta name="og:image"
-    content="https://assets.startbootstrap.com/img/meta/products/og/og-image-sb-ui-kit-pro-angular.png"
-    data-dynamic="true">
-  <meta name="og:image:alt" content="SB UI Kit Pro Angular Preview Image" data-dynamic="true">
-  <meta name="og:image:height" content="630" data-dynamic="true">
-  <meta name="og:image:secure_url"
-    content="https://assets.startbootstrap.com/img/meta/products/og/og-image-sb-ui-kit-pro-angular.png"
-    data-dynamic="true">
-  <meta name="og:image:width" content="1200" data-dynamic="true">
-  <meta name="og:locale" content="en_US" data-dynamic="true">
-  <meta name="og:site_name" content="Start Bootstrap" data-dynamic="true">
-  <meta name="og:title" content="SB UI Kit Pro Angular - Theme Preview" data-dynamic="true">
-  <meta name="og:type" content="website" data-dynamic="true">
-  <meta name="og:url" content="https://startbootstrap.com/previews/sb-ui-kit-pro-angular" data-dynamic="true">
-  <meta name="twitter:card" content="summary_large_image" data-dynamic="true">
-  <meta name="twitter:description"
-    content="An Angular 9 UI Kit built with Bootstrap. Demo the speed, functionality, components, and customization options available with this Bootstrap UI Kit!"
-    data-dynamic="true">
-  <meta name="twitter:image"
-    content="https://assets.startbootstrap.com/img/meta/products/twitter/twitter-image-sb-ui-kit-pro-angular.png"
-    data-dynamic="true">
-  <meta name="twitter:site" content="@SBootstrap" data-dynamic="true">
-  <meta name="twitter:title" content="SB UI Kit Pro Angular - Theme Preview" data-dynamic="true">
-  <style>
-    [_nghost-serverApp-c45] {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      margin: .5em;
-      z-index: 1200;
-      width: 350px
-    }
-  </style>
-  <style>
-    #overlay[_ngcontent-serverApp-c106] {
-      display: flex;
-      justify-content: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100%;
-      min-height: 100vh;
-      z-index: 1090;
-      background-color: #00000080
-    }
-  </style>
-  <style>
-    .preview-container[_ngcontent-serverApp-c116] {
-      height: 100vh;
-      background-color: #212832
-    }
-
-    .preview-bar[_ngcontent-serverApp-c116] {
-      height: 63px
-    }
-
-    .preview-bar[_ngcontent-serverApp-c116] .responsive-toggler[_ngcontent-serverApp-c116] {
-      display: flex
-    }
-
-    .preview-bar[_ngcontent-serverApp-c116] .responsive-toggler.active[_ngcontent-serverApp-c116] {
-      color: #dc392d
-    }
-
-    .dropdown-licenses[_ngcontent-serverApp-c116] {
-      display: inline-block
-    }
-
-    .dropdown-licenses[_ngcontent-serverApp-c116] .features-list[_ngcontent-serverApp-c116] {
-      color: #a7aeb8;
-      font-size: .875em;
-      padding-left: 1rem
-    }
-
-    .iframe-preview[_ngcontent-serverApp-c116] {
-      position: absolute;
-      height: calc(100% - 63px);
-      width: 100%;
-      border: none;
-    }
-
-    .iframe-preview-full[_ngcontent-serverApp-c116] {
-      height: 100% !important;
-      margin-top: 0 !important
-    }
-
-    .iframe-preview-mobile[_ngcontent-serverApp-c116] {
-      width: 375px;
-      left: 50%;
-      transform: translate(-50%)
-    }
-
-    .iframe-preview-tablet[_ngcontent-serverApp-c116] {
-      width: 768px;
-      left: 50%;
-      transform: translate(-50%)
-    }
-
-    .border-bottom-primary[_ngcontent-serverApp-c116] {
-      border-bottom: 3px #c5ccd6 solid
-    }
-  </style>
-  <style>
-    .toast-coupon[_ngcontent-serverApp-c42] {
-      background-color: #fff;
-      border: 0;
-      box-shadow: 0 .15rem 1.75rem #21283226
-    }
-
-    .toast-coupon[_ngcontent-serverApp-c42] .toast-body[_ngcontent-serverApp-c42] {
-      padding: 1rem
-    }
-  </style>
-  <style>
-    .toast-dismiss[_ngcontent-serverApp-c41] {
-      position: absolute;
-      top: .5rem;
-      right: .5rem
-    }
-
-    .toast-coupon-inner[_ngcontent-serverApp-c41] {
-      border: .25rem dotted #e0e5ec;
-      padding: 1rem;
-      text-align: center
-    }
-
-    .toast-coupon-inner[_ngcontent-serverApp-c41] .toast-coupon-img[_ngcontent-serverApp-c41] {
-      height: 4rem
-    }
-
-    .toast-coupon-inner[_ngcontent-serverApp-c41] .toast-coupon-heading[_ngcontent-serverApp-c41] {
-      font-size: 1.25rem;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      font-weight: 700
-    }
-
-    .toast-coupon-inner[_ngcontent-serverApp-c41] .toast-coupon-subheading[_ngcontent-serverApp-c41] {
-      color: #69707a
-    }
-
-    .toast-coupon-inner[_ngcontent-serverApp-c41] .toast-coupon-code[_ngcontent-serverApp-c41] .text-monospace[_ngcontent-serverApp-c41] {
-      color: #00ac69;
-      font-size: 1.2rem
-    }
-  </style>
-  <link rel="preload" as="script" href="file:///src_modules_site_site-routing_module_ts.a66f888fa0637596.js"
-    crossorigin="script">
-  <link rel="preload" as="font" href="file:///assets/fonts/metropolis/Metropolis-SemiBold.otf" crossorigin="font">
-  <link rel="preload" as="font" href="file:///assets/fonts/metropolis/Metropolis-Medium.otf" crossorigin="font">
-  <link rel="preload" as="font" href="file:///assets/fonts/metropolis/Metropolis-Regular.otf" crossorigin="font">
-  <link rel="preload" as="font" href="file:///assets/fonts/metropolis/Metropolis-Bold.otf" crossorigin="font">
-  <link rel="preload" as="font" href="file:///assets/fonts/metropolis/Metropolis-RegularItalic.otf" crossorigin="font">
-</head>
-
-<body>
-  <app-root _nghost-serverapp-c107="" ng-version="15.2.5"><sbpro-toast-view _ngcontent-serverapp-c107=""
-      aria-live="polite" aria-atomic="true" class="ngb-toasts"
-      _nghost-serverapp-c45=""><!----></sbpro-toast-view><sbw-overlay _ngcontent-serverapp-c107=""
-      _nghost-serverapp-c106=""><!----></sbw-overlay><router-outlet
-      _ngcontent-serverapp-c107=""></router-outlet><sbw-preview _nghost-serverapp-c116="">
-      <div _ngcontent-serverapp-c116="" class="preview-container"><!----><iframe _ngcontent-serverapp-c116=""
-          width="100%" class="iframe-preview"
-          src="./SB UI Kit Pro Angular - Theme Preview - Start Bootstrap_files/saved_resource.html"></iframe></div>
-      <!----><!---->
-    </sbw-preview><!----></app-root>
-
-  <script defer=""
-    src="./SB UI Kit Pro Angular - Theme Preview - Start Bootstrap_files/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-    integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-    data-cf-beacon="{&quot;rayId&quot;:&quot;849f665c0853218c&quot;,&quot;version&quot;:&quot;2024.1.0&quot;,&quot;token&quot;:&quot;6e2c2575ac8f44ed824cef7899ba8463&quot;}"
-    crossorigin="anonymous"></script>
-  <div><iframe style="display: none;"
-      src="./SB UI Kit Pro Angular - Theme Preview - Start Bootstrap_files/saved_resource(1).html"></iframe></div>
-  <div>
-    <div class="grecaptcha-badge" data-style="none"
-      style="width: 256px; height: 60px; position: fixed; visibility: hidden;">
-      <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
-          name="a-mj4x8nflpdck" frameborder="0" scrolling="no"
-          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-          src="./SB UI Kit Pro Angular - Theme Preview - Start Bootstrap_files/anchor.html"></iframe></div>
-    </div><iframe style="display: none;"
-      src="./SB UI Kit Pro Angular - Theme Preview - Start Bootstrap_files/saved_resource(2).html"></iframe>
-  </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SB UI Kit Pro</title>
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    </head>
+    <body>
+        <div id="layoutDefault">
+            <div id="layoutDefault_content">
+                <main>
+                    <!-- Navbar-->
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+                        <div class="container px-5">
+                            <a class="navbar-brand text-white" href="index.html">SB UI Kit Pro</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto me-lg-5">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Landings
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Pages
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Documentation
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="btn fw-500 ms-lg-4 btn-teal" href="#">
+                                    Buy Now
+                                    <i class="ms-2" data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+                        <div class="page-header-ui-content pt-10">
+                            <div class="container px-5">
+                                <div class="row gx-5 align-items-center">
+                                    <div class="col-lg-6" data-aos="fade-up">
+                                        <h1 class="page-header-ui-title">Build your next project faster with SB UI Kit Pro</h1>
+                                        <p class="page-header-ui-text mb-5">Welcome to SB UI Kit Pro, a toolkit for building beautiful web interfaces, created by the development team at Start Bootstrap</p>
+                                        <a class="btn btn-teal fw-500 me-2" href="#!">
+                                            Get Started
+                                            <i class="ms-2" data-feather="arrow-right"></i>
+                                        </a>
+                                        <a class="btn btn-link fw-500" href="#!">Learn More</a>
+                                    </div>
+                                    <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"><img class="img-fluid" src="creativity.svg" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-white">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </header>
+                    <section class="bg-white py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 text-center">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="layers"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-smartphone">
+                                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                    </svg></i></div>
+                                    <h3>Built for developers</h3>
+                                    <p class="mb-0">Our customizable, block-based build system makes creating your next project fast and easy!</p>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="smartphone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-layers">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>
+                                    </svg></i></div>
+                                    <h3>Modern responsive design</h3>
+                                    <p class="mb-0">Featuring carefully crafted, mobile-first components, your end product will function beautifully on any device!</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="code"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-code">
+                                        <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg></i></div>
+                                    <h3>Complete documentation</h3>
+                                    <p class="mb-0">All of the layouts, page sections, components, and utilities are fully covered in this products docs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-light footer-light">
+                    <div class="container px-5">
+                        <div class="row gx-5">
+                            <div class="col-lg-3">
+                                <div class="footer-brand">SB UI Kit Pro</div>
+                                <div class="mb-3">Design made easy</div>
+                                <div class="icon-list-social mb-5">
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-instagram"></i></a>
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-facebook"></i></a>
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-github"></i></a>
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row gx-5">
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Product</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Landing</a></li>
+                                            <li class="mb-2"><a href="#!">Pages</a></li>
+                                            <li class="mb-2"><a href="#!">Sections</a></li>
+                                            <li class="mb-2"><a href="#!">Documentation</a></li>
+                                            <li><a href="#!">Changelog</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Technical</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Documentation</a></li>
+                                            <li class="mb-2"><a href="#!">Changelog</a></li>
+                                            <li class="mb-2"><a href="#!">Theme Customizer</a></li>
+                                            <li><a href="#!">UI Kit</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Includes</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Utilities</a></li>
+                                            <li class="mb-2"><a href="#!">Components</a></li>
+                                            <li class="mb-2"><a href="#!">Layouts</a></li>
+                                            <li class="mb-2"><a href="#!">Code Samples</a></li>
+                                            <li class="mb-2"><a href="#!">Products</a></li>
+                                            <li class="mb-2"><a href="#!">Affiliates</a></li>
+                                            <li><a href="#!">Updates</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Legal</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Privacy Policy</a></li>
+                                            <li class="mb-2"><a href="#!">Terms and Conditions</a></li>
+                                            <li><a href="#!">License</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-md-6 small">Copyright ©️ Your Website 2023</div>
+                            <div class="col-md-6 text-md-end small">
+                                <a href="#!">Privacy Policy</a>
+                                ·
+                                <a href="#!">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true,
+            });
+        </script>
+
+        <sb-customizer project="sb-ui-kit-pro"></sb-customizer>
 </body>
-
 </html>
