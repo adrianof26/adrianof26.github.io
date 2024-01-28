@@ -19,6 +19,7 @@ img {
 }
 
 body {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -32,7 +33,7 @@ p {
 
 @media (min-width: 375px) {
   body {
-    width: 375px;
+    width: 100%;
   }
   header {
     background-color: white;
@@ -137,7 +138,7 @@ p {
 }
 @media (min-width: 425px) {
   body {
-    width: 425px;
+    width: 100%;
   }
   header {
     background-color: white;
