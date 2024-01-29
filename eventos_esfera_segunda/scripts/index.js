@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    // Ocultar el menú en dispositivos móviles al cargar la página
+    if ($(window).width() <= 768) {
+      $('.menu').hide();
+    }
   
     // Función para manejar el click en el botón de la hamburguesa
     $('.menu__trigger').click(function(){
@@ -20,10 +25,15 @@ $(document).ready(function(){
     });
     
     // Manejar cambios en el tamaño de la ventana
+    $(window).resize(function(){
       if($(window).width() > 768) {
         // Si la ventana es más grande que 768 píxeles, mostrar el menú
         $('.menu').removeAttr('style');
+      } else {
+        // Si la ventana es menor o igual a 768 píxeles, ocultar el menú
+        $('.menu').hide();
       }
+    });
     
     // Parallax
     $(window).scroll(function() {
@@ -33,11 +43,6 @@ $(document).ready(function(){
         "transform" : "translate(0%," + windowscroll /15 + "%"
       });
     });
-    
-    // Ocultar el menú en dispositivos móviles al cargar la página
-    if ($(window).width() <= 768) {
-      $('.menu').hide();
-    }
     
   });
   
