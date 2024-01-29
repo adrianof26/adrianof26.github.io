@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // Ocultar el menú en dispositivos móviles al cargar la página
+    // Ocultar el menú al cargar la página en dispositivos móviles
     if ($(window).width() <= 768) {
       $('.menu').hide();
     }
@@ -26,9 +26,9 @@ $(document).ready(function(){
     
     // Manejar cambios en el tamaño de la ventana
     $(window).resize(function(){
-      if($(window).width() > 768) {
-        // Si la ventana es más grande que 768 píxeles, mostrar el menú
-        $('.menu').removeAttr('style');
+      // Si la ventana es más grande que 768 píxeles, asegurarse de que el menú esté visible
+      if ($(window).width() > 768) {
+        $('.menu').show();
       } else {
         // Si la ventana es menor o igual a 768 píxeles, ocultar el menú
         $('.menu').hide();
