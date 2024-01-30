@@ -1,736 +1,190 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: white;
-  font-family: 'Open Sans', sans-serif;
-  color: #676B65;
-  font-size: 18px;
-}
-
-h1 {
-  color: white;
-  font-size: 48px;
-  line-height: 70px;
-}
-
-h2,
-h3,
-h4 {
-  color: #151913;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.svglogo{
-  width: 100px;
-  object-fit: cover;
-
-}
-
-.grid {
-  display: grid;
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.logofootersvg{
-  width: 200px;
-  object-fit: cover;
-
-}
-.header {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #346767;
-  opacity: 0.65;
-  z-index: 2;
-}
-
-.header__logo{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.header__logo a{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.header__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.header__container {
-  height: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  position: relative;
-  z-index: 3;
-  align-items: center;
-}
-
-.logo {
-  font-size: 32px;
-  padding: 20px;
-  font-weight: bold;
-}
-
-.logo a {
-  color: white;
-  text-decoration: none;
-}
-
-.logo a span {
-  font-size: 38px;
-  color: #66BBCC;
-  text-transform: uppercase;
-}
-
-.header__menu {
-  padding: 20px;
-}
-
-.menu__trigger {
-  display: none;
-  width: 45px;
-  height: 45px;
-  position: relative;
-}
-
-.menu__trigger span {
-  width: 100%;
-  height: 3px;
-  background: #ffffff;
-  position: absolute;
-}
-
-.menu__trigger span:nth-child(1) {
-  top: 0;
-}
-
-.menu__trigger span:nth-child(2) {
-  top: 12px;
-}
-
-.menu__trigger span:nth-child(3) {
-  top: 24px;
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 80px;
-  grid-column-gap: 40px;
-  justify-content: space-between;
-  position: relative;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 0;
-  margin: 10px 0;
-  transition: border-bottom 0.3s ease-in-out;
-  position: relative;
-}
-
-.menu a::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 0px;
-  height: 100%;
-  border-bottom: solid 2px #fff;
-  transition: all 0.5s ease;
-}
-
-.menu a:hover::before {
-  width: 100%;
-}
-
-a.active,
-a.active:hover {
-  border-bottom: solid 2px #fff;
-  z-index: 2;
-}
-
-a.active::before,
-a.active:hover::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-bottom: solid 2px #fff;
-  transition: all 0.5s ease;
-}
-
-.header__title,
-.header__button {
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  align-items: center;
-}
-
-.header__title span {
-  color: #66BBCC;
-}
-
-.button,
-.footer__form .button {
-  padding: 10px;
-  display: inline-block;
-  min-width: 170px;
-  background: #346767;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.button:hover,
-.footer__form .button:hover {
-  background: #967AA1;
-  color: #fff;
-}
-
-.about {
-  background: #F5E6E8;
-  padding: 50px 0;
-}
-
-.about__container {
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  padding: 20px;
-}
-
-.about__img {
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.about__img img {
-  width: 100%;
-}
-
-.about__text {
-  padding: 10px;
-}
-
-.about__text p {
-  line-height: 1.7;
-  margin: 40px 0;
-}
-
-.about__button {
-  padding-top: 20px;
-}
-
-.gallary {
-  grid-template-columns: 1fr;
-  text-align: center;
-}
-
-.gallary__title {
-  padding: 0 10px;
-  margin: 50px 0;
-}
-
-.gallary__grid {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 150px);
-  grid-gap: 5px;
-  padding: 10px;
-}
-
-.gallary__item {
-  position: relative;
-  cursor: pointer;
-}
-
-.gallary__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallary__item:nth-child(1) {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallary__item:nth-child(3) {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
-.gallary__item:nth-child(4) {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.gallary__item:nth-child(7) {
-  grid-column: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-.gallary__item:nth-child(8) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 4;
-}
-
-.gallary__item__description h4 {
-  color: #FFED4A;
-}
-
-.gallary__item__description p {
-  font-size: 14px;
-  color: white;
-}
-
-.gallary__item:hover .gallary__item__description {
-  opacity: 1;
-  bottom: 0;
-}
-
-.gallary__button {
-  padding: 50px 10px;
-}
-
-.ourteam {
-  text-align: center;
-  background-color: #F5E6E8;
-}
-
-.ourteam__title {
-  padding: 50px 10px;
-}
-
-.ourteam__grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  padding-bottom: 50px;
-}
-
-.ourteam__item {
-  background: white;
-  margin: 0 10px;
-  border: solid 3px;
-  border-color: #967AA1;
-  transition: all 0.5s ease-in-out;
-}
-
-.ourteam__item:hover {
-  border-color: #F5E6E8;
-}
-
-.ourteam__img {
-  width: 100%;
-  height: 240px;
-}
-
-.ourteam__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.ourteam__name {
-  padding: 20px 10px;
-}
-
-.ourteam__desctiption {
-  font-size: 16px;
-  padding: 0 30px 20px;
-  line-height: 1.7;
-}
-
-.ourteam__socials {
-  padding-bottom: 20px;
-  font-size: 20px;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.ourteam__socials a {
-  padding: 0 5px;
-  color: #FFED4A;
-  transition: color 0.5s ease-in-out;
-}
-
-.ourteam__socials a:hover {
-  color: #e3cc00;
-}
-
-.ourteam__item:hover .ourteam__socials {
-  opacity: 1;
-}
-
-footer {
-  background: #346767;
-  margin: 0;
-  padding: 50px 10px;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 50px 10px;
-}
-
-.margenfooter{
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer__socials {
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.footer__socials a svg{
-  width: 60px;
-}
-.footer__socials a {
-  font-size: 30px;
-  padding: 0 5px;
-  color: rgba(178, 207, 178, 0.7);
-  transition: color 0.5s ease-in-out;
-}
-
-.footer__socials a:hover {
-  color: rgba(209, 227, 209, 0.7);
-}
-
-.footer__form {
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  text-align: center;
-}
-
-.footer__form textarea,
-.footer__form .footer__button {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.footer__form input[type="text"],
-.footer__form input[type="email"],
-.footer__form textarea {
-  background: rgba(178, 207, 178, 0.7);
-  padding: 15px;
-  color: #fff;
-  border: none;
-  outline: solid 3px rgba(178, 207, 178, 0.7);
-  transition: outline 0.5s ease;
-}
-
-.footer__form input[type="text"]::placeholder,
-.footer__form input[type="email"]::placeholder,
-.footer__form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: 'Open Sans', sans-serif;
-}
-
-.footer__form input[type="text"]:focus,
-.footer__form input[type="email"]:focus,
-.footer__form textarea:focus {
-  outline: solid 3px #FFED4A;
-}
-
-.footer__form textarea {
-  grid-row-start: 2;
-  grid-row-end: 8;
-}
-
-.footer__form input[type="submit"]:focus {
-  outline: none;
-}
-
-/* Large Devices, Wide Screens */
-
-@media (min-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
-  .ourteam__desctiption {
-    font-size: 14px;
-  }
-}
-
-/* Medium Devices, Desktops */
-
-@media (min-width: 992px) {
-  h1 {
-    font-size: 42px;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  .header__container {
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 5px;
-  }
-  .menu__links {
-    grid-column-gap: 10px;
-  }
-  .logo {
-    font-size: 30px;
-  }
-  .logo a span {
-    font-size: 34px;
-  }
-  .button,
-  .footer__form .button {
-    font-size: 18px;
-  }
-  .about__text p {
-    line-height: 1.4;
-    margin: 15px 0;
-    font-size: 14px;
-  }
-  .gallary__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    grid-gap: 5px;
-    padding: 10px;
-  }
-  .gallary__item:nth-child(1) {
-    grid-row-start: auto;
-    grid-row-end: auto;
-  }
-  .gallary__item:nth-child(3) {
-    grid-column-start: auto;
-    grid-column-end: auto;
-  }
-  .gallary__item:nth-child(4) {
-    grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row-start: auto;
-    grid-row-end: auto;
-  }
-  .gallary__item:nth-child(5) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .gallary__item:nth-child(7) {
-    grid-column: auto;
-    grid-row-start: auto;
-    grid-row-end: auto;
-  }
-  .gallary__item:nth-child(8) {
-    grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row: auto;
-  }
-  .ourteam__title {
-    padding: 30px 10px;
-  }
-  .ourteam__grid {
-    grid-gap: 0;
-  }
-  .ourteam__img {
-    height: 160px;
-  }
-  .ourteam__desctiption {
-    padding: 0 10px 20px;
-    line-height: 1.4;
-  }
-  .footer {
-    padding: 30px 10px;
-  }
-  .footer__form {
-    grid-template-columns: 1fr;
-  }
-  .footer__form textarea,
-  .footer__form .footer__button {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .footer__form textarea {
-    grid-row-start: 3;
-    grid-row-end: 8;
-  }
-}
-
-/* Small Devices, Tablets */
-
-@media (min-width: 768px) {
-  h2 {
-    text-align: center;
-  }
-  .header__container {
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 5px;
-  }
-  .header__menu {
-    justify-content: end;
-  }
-  .menu {
-    display: none;
-    grid-template-columns: 1fr;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: rgba(8, 28, 9, 0.9);
-    border-top: 3px solid #FFED4A;
-  }
-  .menu a {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 18px;
-  }
-  .menu a::before {
-    border-bottom: none;
-  }
-  .menu a:hover::before {
-    width: 100%;
-  }
-  a.active,
-  a.active:hover {
-    color: #fff;
-    border-bottom: none;
-  }
-  a.active::before,
-  a.active:hover::before {
-    border-bottom: none;
-  }
-  .menu__trigger {
-    display: block;
-    width: 45px;
-  }
-  .about__container {
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-  }
-  .about__button {
-    text-align: center;
-  }
-  .ourteam__grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .ourteam__img img {
-    object-position: 50% 70%;
-  }
-  .ourteam__socials {
-    opacity: 1;
-  }
-  .footer__container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Extra Small Devices, Phones */
-
-@media (min-width: 375px) {
-  h1 {
-    font-size: 70px;
-  }
-  .logo {
-    font-size: 22px;
-  }
-  .logo a span {
-    font-size: 24px;
-  }
-  .gallary__grid {
-    display: block;
-  }
-  .gallary__item:nth-child(5) {
-    grid-column-start: auto;
-    grid-column-end: auto;
-  }
-
-  .ourteam__grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .menu{
-    display: none;
-  }
-
-  .closed, .menu__trigger{
-    display: grid;
-    width: 100px;
-  }
-
-  .menu__trigger span{
-    height: 5px;
-  }
-
-  .button, .footer__form .button{
-    min-width: 238px;
-    font-size: 46px;
-  }
-
-  .logo {
-    font-size: 50px;
-  }
-
-  .logo a span{
-    font-size: 50px;
-  }
-
-  h2{
-    font-size: 40px;
-  }
-
-  .ourteam__desctiption {
-    font-size: 30px;
-}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Eventos Esfera</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <!-- Font Awesome-->
+  <script src="https://use.fontawesome.com/f28c2cb418.js"></script>
+</head>
+<body>
+  
+  <header class="header"> 
+    <img src="./img/principal.jpg" alt="" class="header__bg">
+    <div class="header__container container grid">
+      <div class="header__logo logo">
+        <a href="index.html"><img src="./img/logo_sfera.svg" alt="" class="svglogo">Eventos <span>Esfera</span></a>
+      </div>
+      <div class="header__menu grid">
+        <a href="#" class="closed menu__trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        <nav class="menu grid"> 
+            <a href="#" class="menu__item active">Inicio</a>
+            <a href="#" class="menu__item">Nosotros</a>
+            <a href="#" class="menu__item">Galería</a>
+            <a href="#" class="menu__item">Servicios</a>
+            <a href="#" class="menu__item">Contacto</a>
+        </nav>
+      </div>
+      <div class="header__title"> 
+        <h1>Hacemos todo <br>tipo de <span>Eventos</span></h1>
+      </div>
+      <div class="header__button">
+        <a href="#" class="button">Galería</a>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="about__container container grid">
+      <div class="about__img">
+      <img src="https://images.unsplash.com/photo-1425116100155-1ac0797442e1?dpr=1&auto=format&fit=crop&w=1500&h=1375&q=80&cs=tinysrgb&crop=" alt="About Us">
+    </div>
+    <div class="about__text">
+      <h2>Sobre nosotros</h2>
+      <p>We are team of enthusiasts. <br>
+We make photos of nature with love. <br>
+No matter we are in the native city or village, or going abroad. We find interesting things, especially nature.</p>
+      <p>As well, we are open for new people. Just contact us, and we publish the best of your works.</p>
+      <div class="about__button">
+        <a href="#" class="button">Contacto</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="gallary grid">
+    <h2 class="gallary__title">Galería</h2>
+    <div class="gallary__grid grid container">
+      
+        <div class="gallary__item">
+          <img src="./img/galeria1.jpg" alt="">
+        </div>
+      
+        <div class="gallary__item">
+          <img src="./img/galeria2.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="./img/galeria5.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="./img/galeria3.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="./img/galeria4.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="./img/galeria7.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="./img/galeria6.jpeg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="http://res.cloudinary.com/alpis/image/upload/v1506005273/u-H9FV40nag_scpgyf.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+      
+        <div class="gallary__item">
+          <img src="http://res.cloudinary.com/alpis/image/upload/v1506005274/GkAcic67zjA_edl40b.jpg" alt="">
+          <div class="gallary__item__description">
+          </div>
+        </div>
+        
+    </div>
+    
+    <div class="gallary__button">
+      <a href="#" class="button">Ver más</a>
+    </div>
+   
+  </section>
+  
+  <section class="ourteam">
+    <div class="ourteam__title">
+      <h2>Nuestro equipo</h2>
+    </div>
+    <div class="ourteam__grid container grid">
+      <div class="ourteam__item">
+        <div class="ourteam__img"><img src="./img/alejandra.png" alt=""></div>
+        <div class="ourteam__name"><h3>Alexandra</h3></div>
+        <div class="ourteam__desctiption"><p>Elena is another word for perfect. <br>
+The root of the word comes from ancient fairy world, where perfect beings were called ELENA not many of them survived throught time but some are still among us.</p></div>
+      </div>
+      <div class="ourteam__item">
+        <div class="ourteam__img"><img src="./img/cristina.jpeg" alt=""></div>
+        <div class="ourteam__name"><h3>Cristina</h3></div>
+        <div class="ourteam__desctiption"><p>A girl who is beautiful and intelligent and hilarious to be around. The bestest friend anyone could ever ask for. <br>She is also a girl who is great in bed and knows how to get to someone's heart quickly.</p></div>
+      </div>
+      <div class="ourteam__item">
+        <div class="ourteam__img"><img src="https://images.unsplash.com/photo-1471201250825-21ccf7920d98?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt=""></div>
+        <div class="ourteam__name"><h3>Mario</h3></div>
+        <div class="ourteam__desctiption"><p>A girl who is beautiful and intelligent and hilarious to be around. The bestest friend anyone could ever ask for. <br>She is also a girl who is great in bed and knows how to get to someone's heart quickly.</p></div>
+      </div>
+      <div class="ourteam__item">
+        <div class="ourteam__img"><img src="https://images.unsplash.com/photo-1471201250825-21ccf7920d98?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt=""></div>
+        <div class="ourteam__name"><h3>Antonio</h3></div>
+        <div class="ourteam__desctiption"><p>A girl who is beautiful and intelligent and hilarious to be around. The bestest friend anyone could ever ask for. <br>She is also a girl who is great in bed and knows how to get to someone's heart quickly.</p></div>
+      </div>
+      <div class="ourteam__item">
+        <div class="ourteam__img"><img src="https://images.unsplash.com/photo-1471201250825-21ccf7920d98?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt=""></div>
+        <div class="ourteam__name"><h3>Raquel</h3></div>
+        <div class="ourteam__desctiption"><p>A girl who is beautiful and intelligent and hilarious to be around. The bestest friend anyone could ever ask for. <br>She is also a girl who is great in bed and knows how to get to someone's heart quickly.</p></div>
+      </div>
+      <div class="ourteam__item">
+        <div class="ourteam__img"><img src="https://images.unsplash.com/photo-1471201250825-21ccf7920d98?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt=""></div>
+        <div class="ourteam__name"><h3>Jerónimo</h3></div>
+        <div class="ourteam__desctiption"><p>A girl who is beautiful and intelligent and hilarious to be around. The bestest friend anyone could ever ask for. <br>She is also a girl who is great in bed and knows how to get to someone's heart quickly.</p></div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+   <div class="footer__container margenfooter">
+     <div class="footer__left grid margenfooter">
+      <div class="footer__logo logo">
+        <a href="index.html">Eventos <span>Esfera</span></a>
+      </div>
+      <div class="footer__logo logo logofootersvg">
+        <img src="./img/logo_sfera.svg" alt="">
+      </div>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/people/Eventos-EsferA/61552034793201/"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0,0,256,256"><g fill="#b2cfb2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M11.5,6c-3.01977,0 -5.5,2.48023 -5.5,5.5v25c0,3.01977 2.48023,5.5 5.5,5.5h25c3.01977,0 5.5,-2.48023 5.5,-5.5v-25c0,-3.01977 -2.48023,-5.5 -5.5,-5.5zM11.5,9h25c1.39823,0 2.5,1.10177 2.5,2.5v25c0,1.39823 -1.10177,2.5 -2.5,2.5h-6.5v-10h3.625c0.504,0 0.93019,-0.37695 0.99219,-0.87695l0.375,-3c0.036,-0.284 -0.05414,-0.56916 -0.24414,-0.78516c-0.189,-0.215 -0.46105,-0.33789 -0.74805,-0.33789h-4v-3.5c0,-1.103 0.897,-2 2,-2h2c0.552,0 1,-0.447 1,-1v-3.375c0,-0.518 -0.39516,-0.95009 -0.91016,-0.99609c-0.059,-0.005 -1.46986,-0.12891 -3.25586,-0.12891c-4.407,0 -6.83398,2.61619 -6.83398,7.36719v3.63281h-4c-0.552,0 -1,0.447 -1,1v3c0,0.553 0.448,1 1,1h4v10h-12.5c-1.39823,0 -2.5,-1.10177 -2.5,-2.5v-25c0,-1.39823 1.10177,-2.5 2.5,-2.5z"></path></g></g></svg></a>
+        <a href="https://www.instagram.com/eventosesfera_/"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0,0,256,256"><g fill="#b2cfb2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path></g></g></svg></a>
+        <a href="mailto:infoeventosesfera@gmail.com"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0,0,256,256"><g fill="#b2cfb2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4,4c-1.105,0 -2,0.895 -2,2v1.73242l1,0.62695l1,0.62695l8,5.01367l8,-4.98047l1,-0.62305l1,-0.62109v-1.77539c0,-1.105 -0.895,-2 -2,-2zM4,6h16v0.76953l-8,4.97852l-8,-5.01367zM2,10.0918v7.9082c0,1.105 0.895,2 2,2h16c1.105,0 2,-0.895 2,-2v-7.86914l-2,1.24414v6.625h-16v-6.6543z"></path></g></g></svg></a>
+        <a href="https://www.tiktok.com/@eventosesfera_"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0,0,256,256"><g fill="#b2cfb2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M6,3c-1.64497,0 -3,1.35503 -3,3v12c0,1.64497 1.35503,3 3,3h12c1.64497,0 3,-1.35503 3,-3v-12c0,-1.64497 -1.35503,-3 -3,-3zM6,5h12c0.56503,0 1,0.43497 1,1v12c0,0.56503 -0.43497,1 -1,1h-12c-0.56503,0 -1,-0.43497 -1,-1v-12c0,-0.56503 0.43497,-1 1,-1zM12,7v7c0,0.56503 -0.43497,1 -1,1c-0.56503,0 -1,-0.43497 -1,-1c0,-0.56503 0.43497,-1 1,-1v-2c-1.64497,0 -3,1.35503 -3,3c0,1.64497 1.35503,3 3,3c1.64497,0 3,-1.35503 3,-3v-3.76758c0.61615,0.43892 1.25912,0.76758 2,0.76758v-2c-0.04733,0 -0.73733,-0.21906 -1.21875,-0.63867c-0.48142,-0.41961 -0.78125,-0.94634 -0.78125,-1.36133z"></path></g></g></svg></a>
+      </div>
+    </div>
+   </div>
+  </footer>
+  
+  
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
