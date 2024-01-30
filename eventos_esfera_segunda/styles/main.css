@@ -688,9 +688,6 @@ footer {
   .logo a span {
     font-size: 24px;
   }
-  .gallary__grid {
-    display: block;
-  }
   .gallary__item:nth-child(5) {
     grid-column-start: auto;
     grid-column-end: auto;
