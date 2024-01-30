@@ -680,7 +680,7 @@ footer {
 
 @media (min-width: 375px) {
   h1 {
-    font-size: 49px;
+    font-size: 70px;
   }
   .logo {
     font-size: 22px;
@@ -706,5 +706,31 @@ footer {
 
   .closed, .menu__trigger{
     display: grid;
+    width: 100px;
   }
+
+  .menu__trigger span{
+    height: 5px;
+  }
+
+  .button, .footer__form .button{
+    min-width: 238px;
+    font-size: 46px;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  .logo a span{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+  .ourteam__desctiption {
+    font-size: 30px;
+}
 }
