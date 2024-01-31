@@ -463,7 +463,7 @@ footer {
 }
 
 /* Extra Small Devices, Phones */
-@media (min-width: 375px){
+@media (min-width: 375px) {
   body{
     font-size: 35px;
   }
@@ -491,6 +491,9 @@ footer {
     display: none;
     background: #346767;
     border-top: none;
+  }
+  .menu a{
+    font-size: 40px;
   }
   .closed,
   .menu__trigger {
@@ -543,7 +546,7 @@ footer {
   }
   .menu a {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 18px;
+    font-size: 40px;
   }
   .menu a::before {
     border-bottom: none;
@@ -657,6 +660,10 @@ footer {
 @media (min-width: 1200px) {
   body {
     font-size: 16px;
+  }
+
+  .menu a {
+    font-size: 20px;
   }
   .ourteam__desctiption {
     font-size: 14px;
