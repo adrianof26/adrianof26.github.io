@@ -9,6 +9,7 @@ body{
   background-color: white;
   color: #939caa; /*dim grey*/
   overflow-x: hidden;
+  max-width: 1440px;
 }
 .body_wrap{
   overflow-x: hidden;
