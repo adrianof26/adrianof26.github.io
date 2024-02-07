@@ -70,7 +70,7 @@
         justify-content: space-between;
         flex-direction: column;
         background: #F5E6E8;
-        gap: 300px;
+        height: 100vh;
     }
 
     .flechas p{
