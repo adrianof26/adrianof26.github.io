@@ -1,0 +1,79 @@
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .background-image__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.8;
+    mix-blend-mode: luminosity;
+  }
+
+  .header{
+    height: auto;
+    background: #3e9595b2;
+  }
+
+  section{
+    background: #F5E6E8;
+    padding: 30px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 50%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+
+  .swiper-slide img{
+    width: 600px;
+    height: 600px;
+  }
+
+  .flechas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .flechas img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .flechas p{
+    color: #2B5252;
+    font-size: 25px;
+  }
+  @media (min-width: 375px) {
+    .containerprincipal{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #F5E6E8;
+        gap: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .containerprincipal{
+        display: block;
+    }
+}
+
