@@ -62,18 +62,40 @@
     font-size: 25px;
   }
   @media (min-width: 375px) {
+    body{
+        background: #3e9595b2;
+    }
     .containerprincipal{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         background: #F5E6E8;
-        gap: 500px;
+        gap: 300px;
+    }
+
+    .flechas p{
+      font-size: 70px;
+    
+    }
+
+    .flechas img{
+      width: 100px;
+      height: 100px;
     }
 }
 
 @media (min-width: 1200px) {
     .containerprincipal{
         display: block;
+    }
+
+    .flechas p{
+      font-size: 50px;
+    }
+
+    .flechas img{
+      width: 70px;
+      height: 70px;
     }
 }
 
