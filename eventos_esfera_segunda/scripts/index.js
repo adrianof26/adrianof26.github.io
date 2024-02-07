@@ -48,6 +48,7 @@ $(window).scroll(function() {
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
+  loop: true,
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
@@ -57,7 +58,8 @@ var swiper = new Swiper(".mySwiper", {
     modifier: 1,
     slideShadows: false,
   },
-  pagination: {
-    el: ".swiper-pagination",
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
