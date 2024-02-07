@@ -1,0 +1,100 @@
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .background-image__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.8;
+    mix-blend-mode: luminosity;
+  }
+
+  .header{
+    height: auto;
+    background: #3e9595b2;
+  }
+
+  section{
+    background: #F5E6E8;
+    padding: 30px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 50%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+
+  .swiper-slide img{
+    width: 700px;
+  }
+
+  .flechas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .flechas img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .flechas p{
+    color: #2B5252;
+    font-size: 25px;
+  }
+  @media (min-width: 375px) {
+    body{
+        background: #3e9595b2;
+    }
+    .containerprincipal{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #F5E6E8;
+        height: 100vh;
+    }
+
+    .flechas p{
+      font-size: 70px;
+    
+    }
+
+    .flechas img{
+      width: 100px;
+      height: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .containerprincipal{
+        display: block;
+    }
+
+    .flechas p{
+      font-size: 50px;
+    }
+
+    .flechas img{
+      width: 70px;
+      height: 70px;
+    }
+}
+
