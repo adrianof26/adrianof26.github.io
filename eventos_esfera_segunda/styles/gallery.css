@@ -5,13 +5,9 @@
     width: 100%;
     height: 100%;
   }
-  .background-image__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    opacity: 0.8;
-    mix-blend-mode: luminosity;
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    color: #2B5252;
   }
 
   .header{
@@ -22,6 +18,9 @@
   section{
     background: #F5E6E8;
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .swiper {
@@ -41,6 +40,7 @@
 
   .swiper-slide img{
     width: 700px;
+    padding-top: 60px;
   }
 
   .flechas{
