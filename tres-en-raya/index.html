@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tres en raya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" crossorigin src="./assets/index-evIGhQ9R.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-JjYXYGf8.css">
+  </head>
+  <body>
+    <h1><span>TRES</span> <span>EN</span> <span>RAYA</span></h1>
+    <div class="preGame">
+      <label for="dimension">De qué tamaño quieres el tablero</label>
+      <input id="dimension" type="text" name="dimension" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <label for="rounds">Cuántas rondas quieres jugar</label>
+      <input id="rounds" type="text" name="rounds" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <button id="createTable" class="bg-transparent hover:bg-red-500 text-red-500 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">Crear tablero</button>
+      <label for="machine"><input type="checkbox" name="machine" id="machine" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"> Jugar contra la máquina</label>
+    </div>
+    <div class="inGame hide">
+      <div id="roundInfo">Ronda <span id="currentRound"></span> de <span id="totalRounds"></span></div>
+      <button id="resetGame" class="bg-transparent hover:bg-red-500 text-red-500 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">Reiniciar</button>
+      <button class="clearGameButton bg-transparent hover:bg-red-500 text-red-500 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">Limpiar Tablero</button>
+      <button id="nextRoundButton" class="bg-transparent hover:bg-red-500 text-red-500 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">Siguiente Ronda</button>
+
+    </div>
+    <div id="marcador"></div>
+    <div id="tablero"></div>
+    <div class="clearGame"><button class="clearGameButton hidden">Volver a jugar</button></div>
+    <div id="movimientos"></div>
+  </body>
+</html>
