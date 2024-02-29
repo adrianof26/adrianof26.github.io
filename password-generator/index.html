@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Password generator</title>
+</head>
+<body>
+
+  <main>
+    <h1 class="title">Password Generator</h1>
+    <section class="password-generator__result">
+      <input type="text" placeholder="P4$5W0rD!" class="result__text-field" disabled>
+      <p class="copied">copied</p>
+      <img src="./assets/images/icon-copy.svg" alt="Copy to clipboard">
+      <img src="./assets/images/icons8-ojo-cerrado-100.png" alt="Show password" class="closedEye">
+    </section>
+    <form>
+      <div class="character-length fieldset">
+        <p class="character-length">Character Length</p>
+        <p class="value"></p>
+        <input class="styled-slider slider-progress" type="range" name="length" id="length" value="10" min="0" max="20" step="1">
+      </div>
+
+      <div class="options fieldset">
+        <div class="radio-field">
+          <input type="checkbox" name="options" id="uppercase" value="uppercase">
+          <img class="checkbox-icon" src="./assets/images/icon-check.svg" alt="">
+          <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        <div class="radio-field">
+          <input type="checkbox" name="options" id="lowercase" value="lowercase">
+          <img class="checkbox-icon" src="./assets/images/icon-check.svg" alt="">
+          <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+        <div class="radio-field">
+          <input type="checkbox" name="options" id="numbers" value="numbers">
+          <img class="checkbox-icon" src="./assets/images/icon-check.svg" alt="">
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="radio-field">
+          <input type="checkbox" name="options" id="symbols" value="symbols">
+          <img class="checkbox-icon" src="./assets/images/icon-check.svg" alt="">
+          <label for="symbols">Include Symbols</label>
+        </div>
+      </div>
+      <div id="password-strength">
+        <h3>strength</h3>
+        <p class="password-strength__state"></p>
+        <div class="password-strength__indicator">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <button>
+        <span>generate</span>
+        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+      </button>
+      
+    </form>
+  </main>
+
+<script src="./assets/script/script.js"></script>
+</body>
+</html>

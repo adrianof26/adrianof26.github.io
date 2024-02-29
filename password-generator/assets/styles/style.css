@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    max-width: 33.75rem;
+}
+
+.title {
+    font-size: 1rem;
+    color: #a9a9a9;
+    text-align: center;
+}
+
+.password-generator__result {
+    color: grey;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #262626;
+    padding: 1rem;
+}
+
+.copied {
+    margin-left: auto;
+    text-transform: uppercase;
+    color: #a4ffaf;
+    visibility: hidden;
+}
+
+.closedEye {
+    color: #a4ffaf;
+    width: 35px;
+}
+
+.copied.animate {
+    display: block;
+    animation:  1s;
+    visibility: visible;
+}
+
+.result__text-field {
+    all: unset;
+    background-color: transparent;
+    border: none;
+    cursor: default;
+    color: #e7e7e7;
+}
+
+.result__text-field::placeholder {
+    color: grey;
+}
+
+.result__text-field:hover {
+    all: unset;
+    cursor: default;
+}
+
+.password-generator__result img:hover {
+    cursor: pointer;
+    filter: invert(0.5) brightness(2);
+}
+
+.fieldset {
+    border: none;
+    padding: 0;
+}
+
+.character-length {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 1.25rem;
+}
+
+.character-length p:first-of-type {
+    padding: 0;
+    float: left;
+    color: #e7e7e7;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.value {
+    text-align: right;
+    color: #a4ffaf;
+    font-size: 1.5rem;
+}
+
+.character-length input {
+    grid-column: span 2;
+}
+
+form {
+    display: grid;
+    gap: 2rem;
+    background-color: #1c1c1c;
+    padding: 1rem;
+}
+
+.options {
+    display: grid;
+    gap: 1rem;
+}
+
+#password-strength {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#password-strength h3 {
+    text-transform: uppercase;
+    color: #a9a9a9;
+    font-size: 1rem;
+}
+
+.password-strength__state {
+    margin-left: auto;
+    text-transform: uppercase;
+    color: #e7e7e7;
+}
+
+.password-strength__indicator {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.password-strength__indicator > * {
+    width: 10px;
+    height: 28px;
+    border: 2px solid #e7e7e7;
+}
+
+input[type=range].styled-slider {
+    height: 8px;
+    -webkit-appearance: none;
+}
+
+input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 26px + var(--ratio) * (100% - 26px));
+}
+
+input[type=range].styled-slider:focus {
+    outline: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #e6e5ea;
+    border: 2px solid #e6e5ea;
+    box-shadow: none;
+    margin-top: calc(8px * 0.5 - max(26px * 0.5, 2px));
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 8px;
+    border: none;
+    border-radius: 0;
+    background: #18171f;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb:hover {
+    background: #18171f;
+    border-color: #a4ffaf;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb:active {
+    background: #18171f;
+    border-color: #a4ffaf;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#a4ffaf, #a4ffaf) 0/var(--sx) 100% no-repeat, #18171f;
+}
+
+.radio-field {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.radio-field label {
+    color: #e7e7e7;
+    font-size: 1rem;
+    order: 3;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    color: currentColor;
+    font: inherit;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #e7e7e7;
+}
+
+.checkbox-icon {
+    position: absolute;
+    transform: translateX(20%);
+    display: none;
+    order: 1;
+}
+
+input[type=checkbox]:checked {
+    background-color: #a4ffaf;
+    border-color: #a4ffaf;
+    order: 2;
+}
+
+input[type=checkbox]:not(:checked):hover {
+    cursor: pointer;
+    border-color: #a4ffaf;
+}
+
+input[type=checkbox]:checked + img {
+    display: block;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #a4ffaf;
+    border-radius: none;
+    border: none;
+    padding-block: 1.125rem;
+}
+
+button > span {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #1c1c1c;
+}
+
+button:hover {
+    outline: 2px solid #a4ffaf;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover span {
+    color: #a4ffaf;
+}
+
+button:hover path {
+    fill: #a4ffaf;
+}
+
+#password-strength.too-weak .password-strength__indicator > div:first-child {
+    background-color: #ff1b28;
+    border: 2px solid #ff1b28;
+}
+
+#password-strength.weak .password-strength__indicator > div:is(:first-child,:nth-child(2)) {
+    background-color: #ff761c;
+    border: 2px solid #ff761c;
+}
+
+#password-strength.medium .password-strength__indicator > div:not(:last-child) {
+    background-color: #ffdd1a;
+    border: 2px solid #ffdd1a;
+}
+
+#password-strength.strong .password-strength__indicator > div {
+    background-color: #a4ffaf;
+    border: 2px solid #a4ffaf;
+}
+
+@media (min-width: 33.75em) {
+    .result__text-field,
+    .result__text-field::placeholder,
+    .result__text-field:hover,
+    p.value {
+        font-size: 1.7rem;
+    }
+
+    .character-length,
+    .radio-field label,
+    #password-strength h3,
+    button > span {
+        font-size: 1.125rem;
+    }
+
+    .password-strength__state,
+    .title {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .password-generator__result {
+        padding: 1.1875rem 2rem;
+    }
+
+    main {
+        gap: 1.5rem;
+    }
+}
